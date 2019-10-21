@@ -1,6 +1,7 @@
 <template lang="pug" functional>
   li.item(:class="data.staticClass")
-    h3.title(v-if="props.title") {{ props.title }}
+    h3.title(v-if="props.title")
+      span.is-block-touch {{ props.title }}
       small.item-meta.has-text-weight-light(v-if="props.meta") {{ props.meta }}
     p.link(v-if="props.link")
       fa(:icon="['fas', 'link']")
@@ -30,9 +31,11 @@
   .title
     margin-bottom .5rem
 
+    span
+      padding-right .5em
+
     small
       font-size .65em
-      padding-left .5em
 
   .link
     a

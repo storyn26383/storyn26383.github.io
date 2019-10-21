@@ -3,13 +3,18 @@
     .section
       .container
         box.name
-          h1.title.is-2
-            span.is-uppercase.has-text-primary.has-text-weight-bold Sasaya
-            small.position.subtitle.is-4 Full-Stack Web Developer
+          .media
+            figure.media-left.is-hidden-desktop
+              .image.is-96x96
+                img.is-rounded(src="~/assets/images/avatar.jpg")
+            .media-content
+              h1.title.is-2
+                span.is-uppercase.has-text-primary.has-text-weight-bold Sasaya
+                small.position.subtitle.is-4.is-block-touch Full-Stack Web Developer
 
         box.about
           .media
-            figure.media-left
+            figure.media-left.is-hidden-touch
               .image.is-128x128
                 img.is-rounded(src="~/assets/images/avatar.jpg")
             .media-content
@@ -168,16 +173,21 @@
   .separator
     padding 0 .5em
 
-  .name
-    .position
-      margin-left .5em
-
-  .about
-    .media
-      align-items center
-      margin-bottom 1rem
+  .media
+    align-items center
 
     .media-left
       margin 0
       margin-right 1rem
+
+  .name
+    .title
+      margin-bottom 0
+
+      span
+        margin-right .5em
+
+  .name, .about
+    .media
+      margin-bottom 1rem
 </style>

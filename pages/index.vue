@@ -186,6 +186,9 @@
   p:not(.link) + p
     margin-top -1rem
 
+  figure
+    margin 0 !important
+
   .container
     max-width 1152px
 

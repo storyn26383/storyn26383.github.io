@@ -15,7 +15,7 @@
             avatar.media-left.is-hidden-touch
             .media-content
               p Over 10 years of experience as a Full-Stack engineer about web development.
-              p Good at PHP, Laravel, JavaScript, Vue, Ruby, CSS, Vim.
+              p Proficiency in PHP, Laravel, JavaScript, Vue, Ruby, CSS, Vim.
               p Team work and team management experience.
               p Write plugins to speed up development, such as Babel plugin, VIM package.
               p Let company's Slack robot have the function of switching iron gates for laziness of daily life.
@@ -37,28 +37,28 @@
           items
             item(title="Senior Full-Stack Web Developer", meta="AmazingTalker | 2018 - Present")
               ul
-                li Promote team technical skills
-                li Accelerate team development and increase production value
-                li Greatly optimize product execution performance
+                li Enhance team technical skills
+                li Facilitate team development and increase production value
+                li Greatly optimize product performance
                 li Optimize server architecture
-                li Introduce Code Review
-                li Introduce Docker
+                li Introduce and implement Code Review
+                li Introduce and implement Docker
             item(title="Senior Full-Stack Web Developer", meta="UniSharp | 2016 - 2018")
               ul
-                li Promote team technical skills
-                li Accelerate team development and increase production value
-                li Introduce Test Driven development
-                li Introduce SCSS
-                li Introduce Vue.js + Nuxt.js
-                li Introduce Single Page Application
+                li Enhance team technical skills
+                li Facilitate team development and increase production value
+                li Introduce and implement Test Driven Development
+                li Introduce and implement SCSS
+                li Introduce and implement Vue.js + Nuxt.js
+                li Introduce and implement Single Page Application
             item(title="Full-Stack Web Developer", meta="Bamboocat | 2014 - 2016")
               ul
-                li Promote team technical skills
-                li Accelerate team development and increase production value
-                li Introduce modern development technology
-                li Introduce SCSS
-                li Introduce Laravel
-                li Introduce Test Driven development
+                li Enhance team technical skills
+                li Facilitate team development and increase production value
+                li Introduce and implement modern development technology
+                li Introduce and implement SCSS
+                li Introduce and implement Laravel
+                li Introduce and implement Test Driven Development
             item(title="Freelancer", meta="2008 - 2014")
 
         hr
@@ -124,11 +124,11 @@
             item.column.is-12(title="JavaScript Helpers with Babel Plugin", link="https://github.com/UniSharp/helpers.js")
               p Extend the JavaScript Object to speed up development.
               p
-                | But since
+                | Since
                 code Object
-                | is the source of all objects, I could not directly extend
+                | is the source of all objects, it cannot be extended directly
                 code Object
-                | . Therefore, I wrote
+                | . Therefore, I write a
                 code Babel Plugin
                 | to solve this problem.
               p As below:
@@ -139,7 +139,7 @@
                 { a: 1, b: 2, c: 3 }.map(n => n ** 2) // { a: 1, b: 4, c: 9 }
             item.column.is-12(title="Vim Vue Plugin", link="https://github.com/storyn26383/vim-vue")
               p
-                | The Vue plugins found on GitHub wrer very LAG, which would affect the efficiency and mood of development. So I wrote a
+                | The Vim Vue plugins found on GitHub were very LAG, which would affect the development efficiency and personal mood. So I wrote a
                 strong high-performance
                 | one.
               figure

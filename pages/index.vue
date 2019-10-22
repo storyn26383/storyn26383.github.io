@@ -22,7 +22,7 @@
               p Good at PHP, Laravel, JavaScript, Vue, Ruby, CSS, Vim.
               p Team work and team management experience.
               p Write plugins to speed up development, such as Babel plugin, VIM package.
-              p Let company's Slack robot have the function of switching iron gates for laziness of daily life LOL.
+              p Let company's Slack robot have the function of switching iron gates for laziness of daily life.
         box
           p
             a(href="https://github.com/storyn26383", target="_blank")
@@ -39,24 +39,25 @@
                 li Promote team technical skills
                 li Accelerate team development and increase production value
                 li Greatly optimize product execution performance
-                li Optimized server architecture
-                li Introducing Docker
+                li Optimize server architecture
+                li Introduce Code Review
+                li Introduce Docker
             item(title="Senior Full-Stack Web Developer", meta="UniSharp | 2016 - 2018")
               ul
                 li Promote team technical skills
                 li Accelerate team development and increase production value
-                li Introducing Test Driven development
-                li Introducing SCSS
-                li Introducing Vue.js + Nuxt.js
-                li Introducing Single Page Application
+                li Introduce Test Driven development
+                li Introduce SCSS
+                li Introduce Vue.js + Nuxt.js
+                li Introduce Single Page Application
             item(title="Full-Stack Web Developer", meta="Bamboocat | 2014 - 2016")
               ul
                 li Promote team technical skills
                 li Accelerate team development and increase production value
-                li Introducing modern development technology
-                li Introducing SCSS
-                li Introducing Laravel
-                li Introducing Test Driven development
+                li Introduce modern development technology
+                li Introduce SCSS
+                li Introduce Laravel
+                li Introduce Test Driven development
             item(title="Freelancer", meta="2008 - 2014")
 
         hr
@@ -116,22 +117,26 @@
             item.column.is-6(title="Flex Dice", link="https://codepen.io/storyn26383/pen/WgjLpg")
               codepen(pen="WgjLpg")
             item.column.is-12(title="JavaScript Helpers with Babel Plugin", link="https://github.com/UniSharp/helpers.js")
-              p Extend the JavaScript Object to speed development.
+              p Extend the JavaScript Object to speed up development.
               p
                 | But since
                 code Object
-                | is the source of all objects, I can't directly extend
+                | is the source of all objects, I could not directly extend
                 code Object
-                | , so I wrote
+                | . Therefore, I wrote
                 code Babel Plugin
-                | to solve this problem, likes below.
+                | to solve this problem.
+              p As below:
               pre(v-highlightjs): code.javascript.
                 1.5.floor() // 1
                 (1).upto(5, n => n) // [1, 2, 3, 4, 5]
                 'Hello World'.limit(5) // 'Hello...'
                 { a: 1, b: 2, c: 3 }.map(n => n ** 2) // { a: 1, b: 4, c: 9 }
             item.column.is-12(title="Vim Vue Plugin", link="https://github.com/storyn26383/vim-vue")
-              p The Vue plugins found on GitHub are very LAG, which affects the efficiency and mood of development, so I wrote a high-performance one myself.
+              p
+                | The Vue plugins found on GitHub wrer very LAG, which would affect the efficiency and mood of development. So I wrote a
+                strong high-performance
+                | one.
               img.image(src="~/assets/images/vim-vue.png")
 </template>
 
@@ -157,6 +162,9 @@
 
   hr
     margin 2rem 0
+
+  strong
+    margin 0 .5rem
 
   p > code
     background-color transparent

@@ -92,17 +92,21 @@
         hr
 
         box(title="Presentations")
-          items.columns
-            item.column.is-6(
+          items
+            item(
               title="Laravel Conf Taiwan 2019",
               meta="PHP / Laravel Puzzlers",
               link="https://github.com/storyn26383/php-laravel-puzzlers-2019")
-              slideshare(code="4Q1trcAtZ0cBzw")
-            item.column.is-6(
+              .columns.is-multiline
+                .column.is-6: youtube(v="RT4F20YX7tQ")
+                .column.is-6: slideshare(code="4Q1trcAtZ0cBzw")
+            item(
               title="Laravel Conf Taiwan 2018",
               meta="Building a Chatbot with Botman",
               link="https://gitlab.com/laravelconftw/chatbot")
-              slideshare(code="8YC61Lawe2Ubqz")
+              .columns.is-multiline
+                .column.is-6: youtube(v="6H4SLkbBKL0")
+                .column.is-6: slideshare(code="8YC61Lawe2Ubqz")
 
         hr
 
@@ -147,9 +151,10 @@
   import Item from '~/components/Item.vue'
   import Codepen from '~/components/Codepen.vue'
   import Slideshare from '~/components/Slideshare.vue'
+  import Youtube from '~/components/Youtube.vue'
 
   @Component({
-    components: { Box, Items, Item, Codepen, Slideshare }
+    components: { Box, Items, Item, Codepen, Slideshare, Youtube }
   })
   export default class PagesIndex extends Vue {
     //

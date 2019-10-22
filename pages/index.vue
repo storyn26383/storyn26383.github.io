@@ -111,7 +111,7 @@
 
         hr
 
-        box(title="Portfolio")
+        box.portfolio(title="Portfolio")
           items.columns.is-multiline
             item.column.is-6(title="Clock in Vue.js", link="https://codepen.io/storyn26383/pen/veGzbK")
               codepen(pen="veGzbK")
@@ -186,9 +186,6 @@
   p:not(.link) + p
     margin-top -1rem
 
-  figure
-    margin 0 !important
-
   .container
     max-width 1152px
 
@@ -221,4 +218,8 @@
   .name, .about
     .media
       margin-bottom 1rem
+
+  .portfolio
+    figure
+      margin 0 !important
 </style>

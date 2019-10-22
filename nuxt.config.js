@@ -39,8 +39,8 @@ export default {
   plugins: [
     '~/plugins/fontawesome.js',
     '~/plugins/highlight.js',
-    '~/plugins/lazysizes.client.js',
-    { src: '~/plugins/ga.js', ssr: false }
+    '~/plugins/ga.client.js',
+    '~/plugins/lazysizes.client.js'
   ],
   /*
    ** Nuxt.js dev-modules

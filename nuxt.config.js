@@ -39,6 +39,7 @@ export default {
   plugins: [
     '~/plugins/fontawesome.js',
     '~/plugins/highlight.js',
+    '~/plugins/lazysizes.client.js',
     { src: '~/plugins/ga.js', ssr: false }
   ],
   /*
@@ -47,7 +48,8 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    '@bazzite/nuxt-optimized-images'
   ],
   /*
    ** Nuxt.js modules
@@ -65,12 +67,36 @@ export default {
     materialDesignIcons: false
   },
   /*
+   ** Optimized images options
+   */
+  optimizedImages: {
+    inlineImageLimit: -1,
+    handleImages: ['jpeg', 'png', 'svg', 'webp', 'gif'],
+    optimizeImages: true,
+    optimizeImagesInDev: false,
+    defaultImageLoader: 'img-loader',
+    mozjpeg: {
+      quality: 85
+    },
+    optipng: false,
+    pngquant: {
+      speed: 7,
+      quality: [0.65, 0.8]
+    },
+    webp: {
+      quality: 85
+    }
+  },
+  /*
    ** Build configuration
    */
   build: {
     /*
      ** You can extend webpack config here
      */
-    extend (_config, _ctx) {}
+    extend (_config, { loaders }) {
+      loaders.vue.transformAssetUrls.img = ['data-src', 'src']
+      loaders.vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+    }
   }
 }

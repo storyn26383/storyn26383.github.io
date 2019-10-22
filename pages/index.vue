@@ -4,9 +4,7 @@
       .container
         box.name
           .media
-            figure.media-left.is-hidden-desktop
-              .image.is-96x96
-                img.is-rounded(src="~/assets/images/avatar.jpg")
+            avatar.media-left.is-hidden-desktop(s)
             .media-content
               h1.title.is-2
                 span.is-uppercase.has-text-primary.has-text-weight-bold Sasaya
@@ -14,9 +12,7 @@
 
         box.about
           .media
-            figure.media-left.is-hidden-touch
-              .image.is-128x128
-                img.is-rounded(src="~/assets/images/avatar.jpg")
+            avatar.media-left.is-hidden-touch
             .media-content
               p Over 10 years of experience as a Full-Stack engineer about web development.
               p Good at PHP, Laravel, JavaScript, Vue, Ruby, CSS, Vim.
@@ -141,7 +137,11 @@
                 | The Vue plugins found on GitHub wrer very LAG, which would affect the efficiency and mood of development. So I wrote a
                 strong high-performance
                 | one.
-              img.image(src="~/assets/images/vim-vue.png")
+              figure
+                picture.image
+                  source(data-srcset="~/assets/images/vim-vue.png?webp", type="image/webp")
+                  source(data-srcset="~/assets/images/vim-vue.png", type="image/png")
+                  img.lazyload(data-src="~/assets/images/vim-vue.png")
 </template>
 
 <script lang="ts">
@@ -152,9 +152,10 @@
   import Codepen from '~/components/Codepen.vue'
   import Slideshare from '~/components/Slideshare.vue'
   import Youtube from '~/components/Youtube.vue'
+  import Avatar from '~/components/Avatar.vue'
 
   @Component({
-    components: { Box, Items, Item, Codepen, Slideshare, Youtube }
+    components: { Box, Items, Item, Codepen, Slideshare, Youtube, Avatar }
   })
   export default class PagesIndex extends Vue {
     //

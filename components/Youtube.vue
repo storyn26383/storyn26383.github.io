@@ -1,7 +1,7 @@
 <template lang="pug" functional>
   .youtube.image.is-16by9
-    iframe.has-ratio(
-      :src="`https://www.youtube.com/embed/${props.v}`"
+    iframe.has-ratio.lazyload(
+      :data-src="`https://www.youtube.com/embed/${props.v}`"
       frameborder="0"
       allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen)

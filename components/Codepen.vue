@@ -1,7 +1,7 @@
 <template lang="pug" functional>
-  iframe.codepen(
+  iframe.codepen.lazyload(
+    :data-src="`//codepen.io/storyn26383/embed/${props.pen}/?height=530&theme-id=0&default-tab=result&embed-version=2`",
     scrolling="no",
-    :src="`//codepen.io/storyn26383/embed/${props.pen}/?height=530&theme-id=0&default-tab=result&embed-version=2`",
     frameborder="no",
     allowtransparency="true")
 </template>

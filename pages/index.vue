@@ -19,12 +19,17 @@
               p Team work and team management experience.
               p Write plugins to speed up development, such as Babel plugin, VIM package.
               p Let company's Slack robot have the function of switching iron gates for laziness of daily life.
-        box
-          p
-            a(href="https://github.com/storyn26383", target="_blank")
-              fa(:icon="['fab', 'github']", size="2x")
-            span.separator |
-            span Taipei, Taiwan
+        box.social-links
+          ul
+            li.is-inline-desktop: a(href="https://github.com/storyn26383", target="_blank")
+              fa.icon(:icon="['fab', 'github']", size="2x")
+              | storyn26383
+            li.is-inline-desktop: a(href="mailto:sasaya@percussion.life")
+              fa.icon(:icon="['fas', 'envelope']", size="2x")
+              | sasaya@percussion.life
+            li.is-inline-desktop
+              fa.icon(:icon="['fas', 'map-marker-alt']", size="2x")
+              | Taipei, Taiwan
 
         hr
 
@@ -184,8 +189,17 @@
   .container
     max-width 1152px
 
-  .separator
-    padding 0 .5em
+  .social-links
+    ul
+      list-style none
+      margin 0
+      padding 0
+
+      li
+        margin-right 1em
+
+    .icon
+      width 1em
 
   .media
     align-items center

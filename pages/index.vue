@@ -21,15 +21,15 @@
               p Let company's Slack robot have the function of switching iron gates for laziness of daily life.
         box.social-links
           ul
-            li.is-inline-desktop: a(href="mailto:sasaya@percussion.life")
-              fa.icon(:icon="['fas', 'envelope-open']", size="2x")
-              | sasaya@percussion.life
             li.is-inline-desktop: a(href="https://github.com/storyn26383", target="_blank")
               fa.icon(:icon="['fab', 'github']", size="2x")
               | storyn26383
-            li.is-inline-desktop
-              fa.icon(:icon="['fas', 'map-marker-alt']", size="2x")
-              | Taipei, Taiwan
+            li.is-inline-desktop: a(href="mailto:sasaya@percussion.life")
+              fa.icon(:icon="['fas', 'envelope-open']", size="2x")
+              | sasaya@percussion.life
+            li.is-inline-desktop: a(href="tel:+852-8193-3455")
+              fa.icon(:icon="['fas', 'mobile-alt']", size="2x")
+              | +852-8193-3455
 
         hr
 

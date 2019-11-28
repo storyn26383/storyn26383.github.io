@@ -18,7 +18,7 @@
               p Proficiency in PHP, Laravel, JavaScript, Vue, Ruby, CSS, Vim.
               p Team work and team management experience.
               p Write plugins to speed up development, such as Babel plugin, VIM package.
-              p Let company's Slack robot have the function of switching iron gates for laziness of daily life.
+              p Let company's Slack chatbot have the function of switching iron gates for laziness of daily life.
         box.social-links
           ul
             li.is-inline-desktop: a(href="https://github.com/storyn26383", target="_blank")
